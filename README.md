@@ -17,6 +17,15 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
 > git clone https://github.com/ginobilinie/BPNet.git
 
+3. Train
+
+
+4. Test
+
+5. Visualization
+
+6. Other Resources
+
 ## Cite
 
 Nie, D., Xue, J., Ren, X. Bidirectional Pyramid Networks for Semantic Segmentation. ACCV 2020
