@@ -19,7 +19,10 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
    <pre> git clone https://github.com/ginobilinie/BPNet.git </pre>
 
 3. Train
-
+<pre>
+   export NGPUS=8
+   python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py  
+</pre>
 
 4. Test
 
