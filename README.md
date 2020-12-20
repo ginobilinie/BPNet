@@ -32,17 +32,16 @@ https://github.com/ginobilinie/BPNet/raw/master/img/arch1.png
    - modify the config.py according to your requirements
    
    - train a network:
-<pre>
+   <pre>
      export NGPUS=8
      python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py  
-</pre>
+   </pre>
 
 4. Test
 
    - inference
    <pre>
      python eval -e epoch_idx -d device_idx [--verbose ] [--show_image] [--save_path Pred_Save_Path]
-
    </pre>
 
 5. Visualization
