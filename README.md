@@ -4,7 +4,7 @@ by Nie, D., Xue, J. and Ren, X., details can be found [here](https://openaccess.
 ## Introduction
 This repository is build for the proposed Bidirectional Pyramid Networks (BPNet), which contains full training and testing code on several segmentation datasets. 
 
-![Arch](https://github.com/ginobilinie/BPNet/tree/master/img/arch1.png "Arch")
+https://github.com/ginobilinie/BPNet/tree/master/img/arch1.png 
 
 ## Usage
 1. Requirement:
@@ -31,7 +31,7 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
 ## Cite
 
-@inproceedings{nie2020bidirectional,
+> @inproceedings{nie2020bidirectional,
   title={Bidirectional Pyramid Networks for Semantic Segmentation},
   author={Nie, Dong and Xue, Jia and Ren, Xiaofeng},
   booktitle={Proceedings of the Asian Conference on Computer Vision},
