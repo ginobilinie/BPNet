@@ -52,6 +52,11 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
    Resources: GoogleDrive [LINK]() contains pretrained models and some share models. 
 
+
+## Performance
+
+
+
 ## Cite
 <pre>
 @inproceedings{nie2020bidirectional,
