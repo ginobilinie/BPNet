@@ -32,7 +32,7 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
    - modify the config.py according to your requirements
      - path to the data config
      - hyper parameters
-     - others
+     - and so on
    
    - train a network:
    <pre>
