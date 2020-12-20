@@ -37,7 +37,7 @@ https://github.com/ginobilinie/BPNet/raw/master/img/arch1.png
      python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py  
    </pre>
 
-4. Test
+4. How to Test
 
    - inference
    <pre>
