@@ -13,6 +13,9 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
 - Software: tested with PyTorch 1.2.0, Python3.7, CUDA 10.0, tensorboardX.
 
+2. Clone the repository:
+
+# git clone https://github.com/hszhao/SAN.git
 
 ## Cite
 
