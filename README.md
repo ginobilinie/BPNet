@@ -26,15 +26,15 @@ https://github.com/ginobilinie/BPNet/raw/master/img/arch1.png
    
    file structure：(split with tab)
    <pre>
-   path-of-the-image   path-of-the-groundtruth
+     path-of-the-image   path-of-the-groundtruth
    </pre>
    
    - modify the config.py according to your requirements
    
    - train a network:
 <pre>
-   export NGPUS=8
-   python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py  
+     export NGPUS=8
+     python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py  
 </pre>
 
 4. Test
