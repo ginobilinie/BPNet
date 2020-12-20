@@ -17,8 +17,9 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
 
 2. Clone the repository:
-
-   <pre> git clone https://github.com/ginobilinie/BPNet.git </pre>
+<pre> 
+   git clone https://github.com/ginobilinie/BPNet.git 
+</pre>
 
 3. Train
 <pre>
