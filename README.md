@@ -31,4 +31,9 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
 ## Cite
 
-Nie, D., Xue, J., Ren, X. Bidirectional Pyramid Networks for Semantic Segmentation. ACCV 2020
+@inproceedings{nie2020bidirectional,
+  title={Bidirectional Pyramid Networks for Semantic Segmentation},
+  author={Nie, Dong and Xue, Jia and Ren, Xiaofeng},
+  booktitle={Proceedings of the Asian Conference on Computer Vision},
+  year={2020}
+}
