@@ -22,18 +22,21 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 </pre>
 
 3. How to Train
-   - create the config file of dataset:train.txt, val.txt, test.txt
+   - create the config file of dataset, i.e., train.txt, val.txt, test.txt, in your data folder
    
-     file structure：(split with tab)
+     file structure：(split with tab or space)
      <pre>
-     path-of-the-image   path-of-the-groundtruth
+     path-of-the-image   path-of-the-gt
      </pre>
    
    - modify the config.py according to your requirements
+     - path to the data config
+     - hyper parameters
+     - others
    
    - train a network:
    <pre>
-     export NGPUS=8
+     export NGPUS=4
      python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py  
    </pre>
 
