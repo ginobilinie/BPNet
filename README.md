@@ -6,7 +6,6 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
 ![Arch](https://github.com/ginobilinie/BPNet/tree/master/img/arch1.png "Arch")
 
-
-# Please cite our paper if it is helpful for you.
+## Usage
 
 Nie, D., Xue, J., Ren, X. Bidirectional Pyramid Networks for Semantic Segmentation. ACCV 2020
