@@ -15,7 +15,7 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
 2. Clone the repository:
 
-# git clone https://github.com/hszhao/SAN.git
+> git clone https://github.com/hszhao/SAN.git
 
 ## Cite
 
