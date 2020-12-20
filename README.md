@@ -27,13 +27,14 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
 6. Other Resources
 
-   <pre> Resources: GoogleDrive [LINK]() contains pretrained models and some share models. </pre>
+   Resources: GoogleDrive [LINK]() contains pretrained models and some share models. 
 
 ## Cite
-
-> @inproceedings{nie2020bidirectional,
+<pre>
+@inproceedings{nie2020bidirectional,
   title={Bidirectional Pyramid Networks for Semantic Segmentation},
   author={Nie, Dong and Xue, Jia and Ren, Xiaofeng},
   booktitle={Proceedings of the Asian Conference on Computer Vision},
   year={2020}
 }
+</pre>
