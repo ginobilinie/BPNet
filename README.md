@@ -7,7 +7,7 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 ![Arch](https://github.com/ginobilinie/BPNet/tree/master/img/arch1.png "Arch")
 
 ## Usage
-1.Requirement:
+1. Requirement:
 
 - Hardware: tested with RTX 2080 TI (11G).
 
