@@ -24,10 +24,10 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 3. How to Train
    - create the config file of dataset:train.txt, val.txt, test.txt
    
-   file structure：(split with tab)
-   <pre>
-   path-of-the-image   path-of-the-groundtruth
-   </pre>
+     file structure：(split with tab)
+     <pre>
+     path-of-the-image   path-of-the-groundtruth
+     </pre>
    
    - modify the config.py according to your requirements
    
