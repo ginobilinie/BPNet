@@ -22,25 +22,28 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 </pre>
 
 3. How to Train
-   - create the config file of dataset, i.e., train.txt, val.txt, test.txt, in your data folder
+   - create the config file of dataset:train.txt, val.txt, test.txt
    
-     file structure：(split with tab or space)
-     <pre>
-     path-of-the-image   path-of-the-gt
-     </pre>
+   file structure：(split with tab)
+   <pre>
+   path-of-the-image   path-of-the-groundtruth
+   </pre>
    
    - modify the config.py according to your requirements
-     - path to the data config
-     - hyper parameters
-     - and so on
    
    - train a network:
-   <pre>
-     export NGPUS=4
-     python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py  
-   </pre>
+<pre>
+   export NGPUS=8
+   python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py  
+</pre>
 
 4. Test
+
+   - inference
+   <pre>
+     python eval -e epoch_idx -d device_idx [--verbose ] [--show_image] [--save_path Pred_Save_Path]
+
+   </pre>
 
 5. Visualization
 
