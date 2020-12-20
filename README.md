@@ -4,7 +4,7 @@ by Nie, D., Xue, J. and Ren, X., details can be found [here](https://openaccess.
 ## Introduction
 This repository is build for the proposed Bidirectional Pyramid Networks (BPNet), which contains full training and testing code on several segmentation datasets. 
 
-![Arch] (https://github.com/ginobilinie/BPNet/raw/master/img/arch1.png "Arch")
+![] (https://github.com/ginobilinie/BPNet/raw/master/img/arch1.png)
 
 ## Usage
 1. Requirement:
