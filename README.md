@@ -1,4 +1,4 @@
-# BPNet for Semantic Segmentation
+# Bidirectional Pyramid Networks for Semantic Segmentation
 
 # More details will be provided soon
 
