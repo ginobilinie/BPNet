@@ -27,7 +27,7 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
 6. Other Resources
 
-   > Resources: GoogleDrive [LINK]() contains pretrained models and some share models.
+   <pre> Resources: GoogleDrive [LINK]() contains pretrained models and some share models. </pre>
 
 ## Cite
 
