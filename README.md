@@ -21,7 +21,17 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
    git clone https://github.com/ginobilinie/BPNet.git 
 </pre>
 
-3. Train
+3. How to Train
+   - create the config file of dataset:train.txt, val.txt, test.txt
+   
+   file structure：(split with tab)
+   <pre>
+   path-of-the-image   path-of-the-groundtruth
+   </pre>
+   
+   - modify the config.py according to your requirements
+   
+   - train a network:
 <pre>
    export NGPUS=8
    python -m torch.distributed.launch --nproc_per_node=$NGPUS train.py  
