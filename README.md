@@ -63,4 +63,4 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
 ## Thanks
 
-Our work uses part of codes from https://github.com/ycszen/TorchSeg and https://github.com/MendelXu/ANN
+Our work uses part of codes from https://github.com/ycszen/TorchSeg and https://github.com/MendelXu/ANN. Thanks for your great work!
