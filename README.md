@@ -55,7 +55,10 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
 ## Performance
 
+- Train Parameters for BPNet_S4: steps(1100), epochs(80), base_lr(0.1), lr_scheduler(poly), momentum(0.9), weight_decay(1e-4).
 
+
+- Train Parameters for BPNet_S3: steps(1100), epochs(80), base_lr(0.1), lr_scheduler(poly), momentum(0.9), weight_decay(1e-4).
 
 ## Cite
 <pre>
@@ -69,4 +72,4 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 
 ## Thanks
 
-Our work uses part of codes from https://github.com/ycszen/TorchSeg and https://github.com/MendelXu/ANN. Thanks for your great work!
+Our work uses part of codes from https://github.com/ycszen/TorchSeg and https://github.com/MendelXu/ANN. Thanks for the great work!
