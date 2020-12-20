@@ -9,7 +9,7 @@ This repository is build for the proposed Bidirectional Pyramid Networks (BPNet)
 ## Usage
 1.Requirement:
 
-- Hardware: tested with RTX 2080 TI (24G).
+- Hardware: tested with RTX 2080 TI (11G).
 
 - Software: tested with PyTorch 1.2.0, Python3.7, CUDA 10.0, tensorboardX.
 
