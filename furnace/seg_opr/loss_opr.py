@@ -209,30 +209,47 @@ class GeneralizedDiceLoss4Organs(nn.Module):
         return out
 
 
-'''
+"""
 Dice_loss
 ouputs: NxCxHxW (should before softmax)
 targets: NxHxW
-'''
+"""
 class Dice_loss:
-    def __init__(self, num_classes=1, class_weights=None):
+    def __init__(self, class_weights=None, ignore_index=None):
         super(Dice_loss, self).__init__()
-        self.num_classes = num_classes
+        # self.num_classes = num_classes
         self.class_weights = class_weights
-    def __call__(self, outputs, targets):
+        self.ignore_index = ignore_index
+
+    def __call__(self, outputs, targets, sample_weight=None):
         loss_dice = 0
         smooth = 1.
+        # print('outputs',outputs.size())
+        b, c, _, _ = outputs.size()
         outputs = F.softmax(outputs, dim=1)
-        for cls in range(self.num_classes):
+        # import pdb; pdb.set_trace()
+
+        if self.ignore_index is not None:
+            mask = targets != self.ignore_index
+            a = mask[:,None,:,:]
+            outputs = outputs * mask[:,None,:,:]
+            targets = targets * mask
+
+        for cls in range(c):
             jaccard_target = (targets == cls).float()
             jaccard_output = outputs[:, cls]
-            intersection = (jaccard_output * jaccard_target).sum()
             if self.class_weights is not None:
                 w = self.class_weights[cls]
             else:
                 w = 1.
-            union = jaccard_output.sum() + jaccard_target.sum()
-#                loss -= torch.log((intersection + eps) / (union - intersection + eps)) * self.jaccard_weight
-            loss_dice += w*(1- (2.*intersection + smooth) / (union  + smooth))
-            # three kinds of loss formulas: (1) 1 - iou (2) -iou (3) -torch.log(iou)
-        return loss_dice/self.num_classes
+            if sample_weight is not None:
+                assert sample_weight.size()[0] == outputs.size()[0]
+                w = w * sample_weight.squeeze()
+            intersection = (jaccard_output * jaccard_target).sum(dim=[1, 2])
+            union = jaccard_output.sum(dim=[1, 2]) + jaccard_target.sum(
+                dim=[1, 2])
+            loss_ = (1 - (2. * intersection + smooth) / (union + smooth))
+            loss_ = w * loss_
+            loss_dice += loss_.sum()
+
+        return loss_dice / (b * c)
